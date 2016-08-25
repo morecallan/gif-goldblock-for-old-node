@@ -44,13 +44,18 @@ server.on('request', function (req, res) {
   get(url, function (err, _, body) {
     var $ = "";
     if (err) {
-      readFile('./jeff.html', function (err, data) {
-        if (err) console.log(err);
-        if (data) {
-          $ = "" + data;
-          res.end($);
-        }
-      });
+      res.end(`<!DOCTYPE html>
+      <html>
+        <head>
+          <meta charset="utf-8">
+          <title>PAGE NOT FOUND</title>
+          <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+        </head>
+        <body>
+          <img style="margin: 3% 28%" src = "https://media.giphy.com/media/3oD3YQjT2cSZTsy6Va/giphy.gif" />
+          <h2 style="font-family: 'Amatic SC'; text-align: center"> Sorry. Can't find the webpage you were looking for to Jeff it up.</h2>
+        </body>
+      </html>`)
     } else {
       $ = load(body);
       $('img').each(function (i, img) {
