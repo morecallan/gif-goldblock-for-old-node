@@ -1,6 +1,6 @@
-# gif-goldblock
+# gif-goldblock-for-turds-that-have-old-node
 
-#### `$ git clone https://github.com/morecallan/gif-goldblock.git`
+#### `$ git clone https://github.com/morecallan/gif-goldblock-for-old-node.git`
 #### `$ cd gif-goldblock`
 #### `$ npm install`
 #### `$ npm install -g`
@@ -14,4 +14,3 @@
 
 <p> Literally all this does is let you view a desired website with all images replaced with jeff goldblum gifs. You can't click around right now, because those links will lead you away from localhost. Be patient. I'll get to it.
 Still buggy with url input. Be nice to it.</p>
-# gif-goldblock-for-old-node
